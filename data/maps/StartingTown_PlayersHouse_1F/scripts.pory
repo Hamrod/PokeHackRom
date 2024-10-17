@@ -1,0 +1,5 @@
+mapscripts StartingTown_PlayersHouse_1F_MapScripts {}
+
+script StartingTown_PlayersHouse_1F_EventScript_Dad {
+	msgbox ("Salut ! Comment va ?", MSGBOX_NPC)
+}

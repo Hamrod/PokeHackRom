@@ -370,6 +370,10 @@
 // gTileset_MossdeepGym
 #define METATILE_MossdeepGym_YellowArrow_Right  0x250
 
+// gTileset_Outdoor
+#define METATILE_Outdoor_Door      0x021
+#define METATILE_Outdoor_Door_Gym  0x1CD
+
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A
 #define METATILE_Pacifidlog_FloatingLogs_HorizontalLeft        0x250
@@ -729,6 +733,10 @@
 #define METATILE_SootopolisGym_Ice_Broken   0x206
 #define METATILE_SootopolisGym_Ice_Cracked  0x20E
 #define METATILE_SootopolisGym_Stairs       0x207
+
+// gTileset_StartingTown
+#define METATILE_StartingTown_Door_Oldale           0x287
+#define METATILE_StartingTown_Door_StartingTownOne  0x248
 
 // gTileset_TrainerHill
 #define METATILE_TrainerHill_CounterDoor          0x334

@@ -1710,6 +1710,22 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_STARTING_TOWN",
+      "name": "STARTING TOWN",
+      "x": 4,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_001",
+      "name": "FIRST ROUTE",
+      "x": 4,
+      "y": 11,
+      "width": 1,
+      "height": 1
     }
   ]
 }

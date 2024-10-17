@@ -1,0 +1,9 @@
+mapscripts StartingTown_MapScripts {}
+
+script StartingTown_EventScript_PlayersHouseSign {
+	msgbox ("Maison de {PLAYER}", MSGBOX_SIGN)
+}
+
+script StartingTown_EventScript_TownSign {
+	msgbox (format("Starting Town la ville de tout les départs"), MSGBOX_SIGN)
+}

@@ -4410,6 +4410,56 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTING_TOWN",
+      "name": "StartingTown_Layout",
+      "width": 43,
+      "height": 40,
+      "primary_tileset": "gTileset_Outdoor",
+      "secondary_tileset": "gTileset_StartingTown",
+      "border_filepath": "data/layouts/StartingTown/border.bin",
+      "blockdata_filepath": "data/layouts/StartingTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTING_TOWN_PLAYERS_HOUSE_1F",
+      "name": "StartingTown_PlayersHouse_1F_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/StartingTown_PlayersHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/StartingTown_PlayersHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTING_TOWN_PLAYERS_HOUSE_2F",
+      "name": "StartingTown_PlayersHouse_2F_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/StartingTown_PlayersHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/StartingTown_PlayersHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_001",
+      "name": "Route_001_Layout",
+      "width": 40,
+      "height": 50,
+      "primary_tileset": "gTileset_Outdoor",
+      "secondary_tileset": "gTileset_StartingTown",
+      "border_filepath": "data/layouts/Route_001/border.bin",
+      "blockdata_filepath": "data/layouts/Route_001/map.bin"
+    },
+    {
+      "id": "LAYOUT_TILESTEST",
+      "name": "Tilestest_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Outdoor",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Tilestest/border.bin",
+      "blockdata_filepath": "data/layouts/Tilestest/map.bin"
     }
   ]
 }
