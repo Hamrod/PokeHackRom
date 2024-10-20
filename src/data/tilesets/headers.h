@@ -834,7 +834,7 @@ const struct Tileset gTileset_Outdoor =
     .palettes = gTilesetPalettes_Outdoor,
     .metatiles = gMetatiles_Outdoor,
     .metatileAttributes = gMetatileAttributes_Outdoor,
-    .callback = NULL,
+    .callback = InitTilesetAnim_Outdoor,
 };
 
 const struct Tileset gTileset_StartingTown =

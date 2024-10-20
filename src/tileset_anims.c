@@ -1186,3 +1186,36 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
             sSecondaryTilesetAnimCallback = NULL;
     }
 }
+
+// Outdoor anims:
+
+const u16 gTilesetAnims_Outdoor_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/outdoor/anim/flower/00.4bpp");
+const u16 gTilesetAnims_Outdoor_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/outdoor/anim/flower/01.4bpp");
+const u16 gTilesetAnims_Outdoor_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/outdoor/anim/flower/02.4bpp");
+
+const u16 *const gTilesetAnims_Outdoor_Flower[] = {
+    gTilesetAnims_Outdoor_Flower_Frame0,
+    gTilesetAnims_Outdoor_Flower_Frame1,
+    gTilesetAnims_Outdoor_Flower_Frame0,
+    gTilesetAnims_Outdoor_Flower_Frame2
+};
+
+static void QueueAnimTiles_Outdoor_Flower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Outdoor_Flower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Outdoor_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 4 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_Outdoor(u16 timer)
+{
+    if (timer % 16 == 0) {
+        QueueAnimTiles_Outdoor_Flower(timer / 16);
+    }
+}
+
+void InitTilesetAnim_Outdoor(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Outdoor;
+}
